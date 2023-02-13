@@ -151,4 +151,4 @@ testem.log
 Thumbs.db
 
 # Uploaded files
-src/uploads/*
+src/uploads/
