@@ -1,25 +1,10 @@
 
 # Target
 
-* A basic Typescript App development environment setup.
-
-## Reference
-
-* Typescrip with nodejs environment.
-
-  * **[Node Starter project](https://khalilstemmler.com/blogs/typescript/node-starter-project/)**
-
-## nodemon.json
-
-* nodemon for keep to watch the change of the file.
-
-## tsconfig.json
-
-* Typescript config file.
-
-## package.json
-
-* npm package file.
+* REST API for a simple receive form data file and save the file in the **uploads** folder.
+  * Use express framework.
+  * Use Multer to handle file upload.
+  * No error handling, Just for test.
 
 # How to use
 
