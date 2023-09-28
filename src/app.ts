@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import multer from 'multer';
 import { dirname } from 'path';
+import { mockDiscoveryPool } from './mock-discovery-pool';
 
 const ports = process.env.Port || 3000;
 const router = express.Router();
@@ -43,6 +44,10 @@ router.post('/test', express.json(), (req, res, next) => {
 router.post('/upload', upload.single('upload_file'), (req, res, next) => {
   console.log(req.file, req.body);
   res.send({ result: 'success' });
+})
+
+router.get('/web/cloud/podview/filterDevice', (req, res) => {
+  return res.status(200).send(mockDiscoveryPool)
 })
 
 // assign port
